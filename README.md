@@ -5,9 +5,11 @@ Keycloak으로 Kong OIDC plugin 적용과 Kong Api gateway 설정을 통하여 M
 Config Server
 
 Config server를 만들기 위해 Gradle에 추가
+
 implementation 'org.springframework.cloud:spring-cloud-config-server'
 
 actuator 사용을 위해 Gradle에 추가
+
 implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
 Config server 등록을 위해 init파일에 어노테이션 등록 @EnableConfigServer 
@@ -20,9 +22,11 @@ Config Server의 application.properties를 yml로 변경한 후 안의 내용 �
  
 Eureka Server
 eureka server를 만들기 위해 Gradle에 추가
+
 implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server
 
 actuator 사용을 위해 Gradle에 추가
+
 implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
 eureka server 등록을 위해 init 파일에 어노테이션 등록 @EnableEurekaServer 
