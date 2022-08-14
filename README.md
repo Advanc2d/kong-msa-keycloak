@@ -1,6 +1,19 @@
 # kong-msa-keycloak
 Keycloak으로 Kong OIDC plugin 적용과 Kong Api gateway 설정을 통하여 MSA환경의 서비스 구현
 
+주제 미정
+
+1. Config Server - 외부 설정을 github repository로 설정
+
+2. Eureka Server - 각 서비스의 등록, 검색(kong api gateway, spring 외의 프로젝트들은 어떻게 등록할 것인가?)
+
+3. KONG API Gateway - OIDC Plugin과 Keycloak 을 설정하여 보안
+
+4. Keycloak - Keycloak을 통한 인증 / 인가(회원 DB 연동과 회원가입, 로그인 등의 뷰 수정 가능한지?)
+
+5. 구글 OTP 추가로 보안 강화
+
+6. Spring, Nodejs, JSP 등 다양한 프로젝트 사용하여 MSA 구성 예정
 
 Config Server
 
