@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: board-service
+  profiles:
+   active: dev
+  config:              # gradle에 config 추가.
+   import: optional:configserver:http://localhost:7777  # config 서버 위치
+  devtools:
+     livereload:  #  html, css, js 수정 시 새로고침 없이 바로 적용가능
+       enabled: true
+     restart:   # 재시작시 완전히 꺼졌다 다시키는 것보다 훨씬 빠르게 해줌.
+      enabled: true
+
+# actuator를 이용하여 서버 재시작 없이 변경내용 반영 가능하게 함.
+management:
+  endpoints:
+   web:
+    exposure:
+     include: refresh, health, beans #refresh:설정 정보 갱신
+
+
+#  jpa:
+#    open-in-view: true
+#    hibernate:
+#      ddl-auto: create-drop  # option type: create, create-drop, update, validate, none 
+#                        # create로 하게되면 기존 테이블을 삭제후 다시 생성하게 된다.
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#      use-new-id-generator-mappings: false
+#    show-sql: true  # sql 쿼리를 보여줍니다.
+#    generate-ddl: true
+#    properties:
+#      hibernate.format_sql: true    # JPA의 구현체인 Hibernate가 동작하면서 발생한 SQL의 가독성을 높여준다.
+#      dialect: org.hibernate.dialect.MySQL5InnoDBDialect    # 쿼리의 기준이 되는 데이터베이스 엔진을 설정합니다.

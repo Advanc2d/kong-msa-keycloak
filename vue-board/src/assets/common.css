@@ -1,0 +1,34 @@
+/* assets/common.css */
+.board-list {
+    width: 80%;
+    margin: auto;
+}
+
+.board-detail {
+    width: 768px;
+    margin: auto;
+    text-align: left;
+}
+
+.board-contents {
+    padding: 12px 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.common-buttons {
+    padding: 8px;
+    text-align: right;
+}
+
+.w3-table-all td, .w3-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+}
+
+.title-link:hover {
+    text-decoration: underline;
+    color :cadetblue;
+    cursor: pointer;
+}
