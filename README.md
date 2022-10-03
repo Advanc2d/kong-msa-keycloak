@@ -48,4 +48,43 @@ eureka server 등록을 위해 init 파일에 어노테이션 등록 @EnableEure
 eureka Server의 application.properties를 yml로 변경한 후 안의 내용 작성
  ![image](https://user-images.githubusercontent.com/92366375/182621783-7ddbc3fa-fb0b-4d25-afb8-a22321cd8a5f.png)
 
-Each Service
+Main Service
+actuator, Config server 외부화, Eureka Server Registry 확인, lombok 사용을 위해 build.Gradle 추가
+implementation 'org.springframework.boot:spring-boot-starter-actuator'
+implementation 'org.springframework.cloud:spring-cloud-starter-config'
+implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+compileOnly 'org.projectlombok:lombok'
+annotationProcessor 'org.projectlombok:lombok'
+
+eureka client 등록을 위해 init 파일에 어노테이션 등록 @EnableEurekaClient
+![image](https://user-images.githubusercontent.com/92366375/193533473-48f6c036-1e7d-4378-8330-3ad62d68cc38.png)
+
+main service의 application.properties를 yml로 변경한 후 안의 내용 작성
+![image](https://user-images.githubusercontent.com/92366375/193533677-bfc6f729-11d1-47e5-b22f-9454df17ca98.png)
+
+configuration 외부화 설정을 위한 git-config repository의 main-service-dev.yml
+![image](https://user-images.githubusercontent.com/92366375/193534158-9b260512-4fff-4c23-9c01-99e4abcc0d0a.png)
+
+
+Board Service
+actuator, Config server 외부화, Eureka Server Registry 확인, lombok 사용, JPA 사용, MySQL 사용을 위해 build.Gradle 추가
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.cloud:spring-cloud-starter-config'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'mysql:mysql-connector-java'
+	annotationProcessor 'org.projectlombok:lombok'
+
+eureka client 등록을 위해 init 파일에 어노테이션 등록 @EnableEurekaClient
+![image](https://user-images.githubusercontent.com/92366375/193534756-614e0e44-1b97-45a8-8772-8a46464ee638.png)
+
+
+board service의 application.properties를 yml로 변경한 후 안의 내용 작성
+![image](https://user-images.githubusercontent.com/92366375/193534826-d09d19f9-5d99-46fc-a5b7-60403c3b02c6.png)
+
+
+configuration 외부화 설정을 위한 git-config repository의 board-service-dev.yml
+![image](https://user-images.githubusercontent.com/92366375/193534977-d58a919c-4854-4f9c-bfc9-6afee0e13df5.png)
+
+
