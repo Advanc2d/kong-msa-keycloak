@@ -49,6 +49,7 @@ eureka Server의 application.properties를 yml로 변경한 후 안의 내용 �
  ![image](https://user-images.githubusercontent.com/92366375/182621783-7ddbc3fa-fb0b-4d25-afb8-a22321cd8a5f.png)
 
 Main Service
+
 actuator, Config server 외부화, Eureka Server Registry 확인, lombok 사용을 위해 build.Gradle 추가
 implementation 'org.springframework.boot:spring-boot-starter-actuator'
 implementation 'org.springframework.cloud:spring-cloud-starter-config'
@@ -67,6 +68,7 @@ configuration 외부화 설정을 위한 git-config repository의 main-service-d
 
 
 Board Service
+
 actuator, Config server 외부화, Eureka Server Registry 확인, lombok 사용, JPA 사용, MySQL 사용을 위해 build.Gradle 추가
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
