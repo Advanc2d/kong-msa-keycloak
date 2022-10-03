@@ -89,4 +89,8 @@ board service의 application.properties를 yml로 변경한 후 안의 내용 �
 configuration 외부화 설정을 위한 git-config repository의 board-service-dev.yml
 ![image](https://user-images.githubusercontent.com/92366375/193534977-d58a919c-4854-4f9c-bfc9-6afee0e13df5.png)
 
+Eureka Server
+Each Service Registry
+![image](https://user-images.githubusercontent.com/92366375/193536869-4c15d97e-761e-4df5-9f37-78c72289f7b1.png)
+
 
