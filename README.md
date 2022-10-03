@@ -91,6 +91,7 @@ configuration 외부화 설정을 위한 git-config repository의 board-service-
 
 Eureka Server
 Each Service Registry
-![image](https://user-images.githubusercontent.com/92366375/193536869-4c15d97e-761e-4df5-9f37-78c72289f7b1.png)
+![image](https://user-images.githubusercontent.com/92366375/193537094-2c5f23eb-7706-4917-a5e5-d1ca0b285dd1.png)
+
 
 
