@@ -93,5 +93,22 @@ Eureka Server
 Each Service Registry
 ![image](https://user-images.githubusercontent.com/92366375/193537094-2c5f23eb-7706-4917-a5e5-d1ca0b285dd1.png)
 
+Docker Compose File을 이용하여 Keycloak, MySQL 설치
+docker-compose.yml 파일 디렉토리에서 CMD창 열기
+
+명령어 입력
+docker-compose -f docker-compose.yml up -d
+![image](https://user-images.githubusercontent.com/92366375/196864211-ef97829d-a1ef-43ab-b133-05b29117722b.png)
+![image](https://user-images.githubusercontent.com/92366375/196864610-e296ea4f-4a84-45b9-bb67-87a1b909ff97.png)
+![image](https://user-images.githubusercontent.com/92366375/196864438-d470b5af-e357-418e-ba25-674afdc335be.png)
+
+Keycloak의 Default DB인 H2를 MySQL로 변경하여 설치하도록 설정한 Docker Compose 파일이다. 
+MySQL을 확인해보면 Keycloak 관련 내용들이 들어와 있는 걸 확인할 수 있다.
+![image](https://user-images.githubusercontent.com/92366375/196864723-601a2ebd-47e9-4b37-8ccb-00ebc0e79ed0.png)
+
+
+
+
+
 
 
